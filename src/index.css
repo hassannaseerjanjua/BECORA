@@ -69,7 +69,19 @@
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+#becora-widget-iframe {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 430px;
+  height: 700px;
+  border: none;
+  z-index: 999999;
+  pointer-events: auto;
 }

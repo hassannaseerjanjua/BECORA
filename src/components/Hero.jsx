@@ -130,6 +130,12 @@ export default function Hero({ onOpenContact }) {
             </div>
 
           </div>
+          <iframe
+            id="becora-widget-iframe"
+            src="http://localhost:5175"
+            allow="clipboard-write"
+            title="BECORA AI Assistant"
+          ></iframe>
 
         </div>
       </div>
