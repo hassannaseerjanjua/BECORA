@@ -58,7 +58,7 @@ export default function Hero({ onOpenContact }) {
             <div className="relative w-full max-w-[620px] lg:max-w-none h-[440px] sm:h-[500px] md:h-[560px] flex items-center justify-center">
 
               {/* 1. Top Right Tilted UI Card ("Better Tools. Bigger Dreams.") */}
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0, y: -20, rotate: 2 }}
                 animate={{ opacity: 1, y: 0, rotate: 4 }}
                 transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
@@ -73,7 +73,7 @@ export default function Hero({ onOpenContact }) {
                     loading="eager"
                   />
                 </div>
-              </motion.div>
+              </motion.div> */}
 
               {/* 2. Right Side Editorial Portrait (Designer with Headphones) */}
               <motion.div
