@@ -27,7 +27,7 @@ export const projects = [
     scope: "Product Strategy / Full-Stack Web App / Data Viz",
     description: "An enterprise telemetry and financial analytics dashboard engineered for hyper-growth teams. Real-time WebSocket metric curves, cohort retention heatmaps, and customizable KPI boards.",
     deliverables: ["High-Performance React UI", "Real-time Charting System", "Role-based Team Permissions", "API Integrations"],
-    results: "Over $1.5M ARR tracked daily, zero-lag rendering with 100k+ data points"
+    results: "Over PKR 1.5M ARR tracked daily, zero-lag rendering with 100k+ data points"
   },
   {
     id: "nexora",

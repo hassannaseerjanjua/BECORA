@@ -42,11 +42,10 @@ export default function Navbar({ onOpenContact }) {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-[#FAF8F5]/90 backdrop-blur-md border-b border-[#E8E3DA]/70 py-4 shadow-xs'
-          : 'bg-[#FAF8F5] py-6 md:py-8'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? 'bg-[#FAF8F5]/90 backdrop-blur-md border-[#E8E3DA]/70 py-4 shadow-xs'
+        : 'bg-[#FAF8F5] py-4 md:py-6'
+        }`}
     >
       <div className="max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 flex items-center justify-between">
         {/* Brand Logo */}
@@ -63,11 +62,10 @@ export default function Navbar({ onOpenContact }) {
             <a
               key={link.name}
               href={link.href}
-              className={`relative text-[14px] font-normal tracking-wide transition-colors py-1 ${
-                activeSection === link.id
-                  ? 'text-[#111111] font-medium'
-                  : 'text-[#6E6D7A] hover:text-[#111111]'
-              }`}
+              className={`relative text-[14px] font-normal tracking-wide transition-colors py-1 ${activeSection === link.id
+                ? 'text-[#111111] font-medium'
+                : 'text-[#6E6D7A] hover:text-[#111111]'
+                }`}
             >
               {link.name}
               {activeSection === link.id && (
@@ -107,11 +105,10 @@ export default function Navbar({ onOpenContact }) {
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`text-base font-normal py-1 ${
-                  activeSection === link.id
-                    ? 'text-[#111111] font-medium'
-                    : 'text-[#6E6D7A]'
-                }`}
+                className={`text-base font-normal py-1 ${activeSection === link.id
+                  ? 'text-[#111111] font-medium'
+                  : 'text-[#6E6D7A]'
+                  }`}
               >
                 {link.name}
               </a>

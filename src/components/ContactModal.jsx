@@ -8,7 +8,7 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
     name: '',
     email: '',
     service: preselectedService?.title || 'Shopify & E-commerce',
-    budget: '$10k - $25k',
+    budget: 'PKR 10k - PKR 25k',
     message: ''
   });
 
@@ -29,7 +29,7 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
     'AI & Automation'
   ];
 
-  const budgetOptions = ['<$10k', '$10k - $25k', '$25k - $50k', '$50k+'];
+  const budgetOptions = ['<PKR 10k', 'PKR 10k - PKR 25k', 'PKR 25k - PKR 50k', 'PKR 50k+'];
 
   return (
     <AnimatePresence>
@@ -86,11 +86,10 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
                         type="button"
                         key={svc}
                         onClick={() => setFormData({ ...formData, service: svc })}
-                        className={`px-3 py-2 text-[12px] font-medium rounded-xl border text-left transition-all cursor-pointer ${
-                          formData.service === svc
+                        className={`px-3 py-2 text-[12px] font-medium rounded-xl border text-left transition-all cursor-pointer ${formData.service === svc
                             ? 'border-[#111111] bg-[#111111] text-white shadow-xs'
                             : 'border-[#E8E3DA] bg-white text-[#4B4A54] hover:border-[#B5B2BA]'
-                        }`}
+                          }`}
                       >
                         {svc}
                       </button>
@@ -140,11 +139,10 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
                         type="button"
                         key={b}
                         onClick={() => setFormData({ ...formData, budget: b })}
-                        className={`px-3 py-1.5 text-[12px] rounded-lg border font-medium transition-colors cursor-pointer ${
-                          formData.budget === b
+                        className={`px-3 py-1.5 text-[12px] rounded-lg border font-medium transition-colors cursor-pointer ${formData.budget === b
                             ? 'border-[#111111] bg-[#111111] text-white'
                             : 'border-[#E8E3DA] bg-white text-[#6E6D7A] hover:border-[#B5B2BA]'
-                        }`}
+                          }`}
                       >
                         {b}
                       </button>

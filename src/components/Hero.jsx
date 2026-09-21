@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function Hero({ onOpenContact }) {
   return (
-    <section id="hero" className="relative pt-32 pb-20 md:pt-40 md:pb-28 lg:pt-44 lg:pb-32 overflow-hidden">
+    <section id="hero" className="relative pt-25  overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
 
@@ -119,7 +119,7 @@ export default function Hero({ onOpenContact }) {
               >
                 <div className="rounded-2xl sm:rounded-3xl overflow-hidden phone-mockup-shadow border border-[#27272A]/40 bg-[#0E0E11] transition-transform duration-300">
                   <img
-                    src="/images/hero_phone.jpg"
+                    src="/images/hero_phone.png"
                     alt="Mobile interface showing Your AI Companion"
                     className="w-full h-auto object-cover block aspect-[3/4]"
                     loading="eager"
